@@ -4,6 +4,46 @@
     <title></title>
 </head>
 <body>
-    <div data-bind="text: customer.First_Name"></div>
+    <a href="#customers" class="btn btn-primary">Go Back</a>    
+    <div class="panel panel-default pull-left">
+        <div class="panel-heading">
+            <span>First Name</span>
+        </div>
+        <div class="panel-body">
+            <span data-bind="text: customer.First_Name"></span>
+        </div>
+    </div>
+    <div class="panel panel-default pull-left">
+        <div class="panel-heading">
+            <span>Last Name</span>
+        </div>
+        <div class="panel-body">
+            <span data-bind="text: customer.Last_Name"></span>
+        </div>
+    </div>
+    <div class="panel panel-default pull-left">
+        <div class="panel-heading">
+            <span>Email</span>
+        </div>
+        <div class="panel-body">
+            <span data-bind="text: customer.Email"></span>
+        </div>
+    </div>
+    <div class="panel panel-default pull-left">
+        <div class="panel-heading">
+            <span>Country</span>
+        </div>
+        <div class="panel-body">
+            <span data-bind="text: customer.Country"></span>
+        </div>
+    </div>
+    <div class="panel panel-default pull-left">
+        <div class="panel-heading">
+            <span>Language</span>
+        </div>
+        <div class="panel-body">
+            <span data-bind="text: customer.Language"></span>
+        </div>
+    </div>
 </body>
 </html>
