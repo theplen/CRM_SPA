@@ -1,0 +1,22 @@
+﻿<div id="options" name="options">
+    
+</div>
+
+<div data-bind="foreach: pagedItems">
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+            <button class="btn btn-default pull-right" data-bind="click: $root.moreInfo">More Info</button>
+            <span class="pull-left" data-bind=" text: First_Name + ' ' + Last_Name"></span>
+        </div>
+        <div class="panel-body" data-bind="text: Email">
+        </div>
+    </div>
+</div>
+<ul class="pager">
+    <li data-bind="css: {'disabled': !previousPageEnabled()}">
+        <a href="#" data-bind="click: previousPage">Previous</a>
+    </li>
+    <li data-bind="css: {'disabled': !nextPageEnabled()}">
+        <a href="#" data-bind="click: nextPage">Next</a>
+    </li>
+</ul>
